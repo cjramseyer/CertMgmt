@@ -1,0 +1,17 @@
+[Version]
+Signature="$Windows NT$"
+[NewRequest]
+
+Subject = "CN=fqdn, O=Big LDAP Company, OU=IT, L=Somecity, ST=Somestate, C=US"
+
+KeySpec = 1
+KeyLength = 2048
+Exportable = TRUE
+MachineKeySet = TRUE
+
+[Extensions]
+; If your client operating system is Windows Server 2008, Windows Server 2008 R2, Windows Vista, or Windows 7
+; SANs can be included in the Extensions section by using the following text format. Note 2.5.29.17 is the OID for a SAN extension.
+
+2.5.29.17 = "{text}"
+_continue_ = "dns=adlds.company.com&"

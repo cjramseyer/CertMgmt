@@ -1,0 +1,63 @@
+
+** Change History
+
+# General Changes
+    v1.1.2
+    - Updated Instructions with additional detailed steps for clarification
+
+Set-CertINF.ps1
+    v1.0.0
+    - Created function to generate cert.inf file
+
+Get-CSR.ps1
+    v1.0.0
+    - Created CSR cmdlet
+
+Get-Cert.ps1
+    v1.1.2
+    - Added parameter to enable Certificate Transparency options
+
+    v1.1.0
+    - Updated script to do ONLY CertMan function
+    - Simplified name Get-SSLCert to Get-Cert
+
+    v1.0.6
+    - Fixed error with function=exit
+
+    v1.0.0
+    - Created Initial script to generate certificates via certman
+
+Install-Cert.ps1
+    v1.1.0
+    - Simplified name for easier usage Install-SSLCert to Install-Cert
+
+    v1.0.0
+    - Created function to install generated certificate on a target system
+    - Added CertName option for certs that are named differently than the target computer
+    - Updated logic for local usage
+
+Register-DCCert.ps1 (deprecated)
+    v1.0.6
+    - Fixed error with function=exit
+
+    v1.0.5
+    - Update Write-Host to Write-Output
+    - Converted to function
+    - Configure Client_rp via switch to match certman chosen
+    - Updated credential prompts with descriptive text
+    - Forced Get-Credential to command-prompt to handle certman style creds
+
+    v1.0.0
+    - Created script (adapted from Tom Hartsaw script)
+
+Install-ServiceCert.psm1
+    v1.0.2
+    - Fixed Write-Output command
+    - Added cert permissions logic
+
+    v1.0.0
+    - Created initial script
+
+Set-CertPerm.ps1
+    v1.0.0
+    - Created Initial script
